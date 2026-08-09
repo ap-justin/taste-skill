@@ -2,19 +2,27 @@
   "name": "taste-skill",
   "description": "Taste skill library for Claude Code — frontend design, image-to-code, and aesthetic skills",
   "owner": {
-    "name": "leonxlnx",
-    "email": ""
+    "name": "ap-justin"
   },
   "plugins": [
     {
       "name": "taste-skill",
-      "description": "Frontend design taste skills including brutalist, minimalist, soft, redesign, stitch, and more",
-      "version": "1.0.0",
+      "description": "Anti-slop frontend design skills for Claude Code — taste, brutalist, minimalist, soft, redesign, stitch, image-to-code, and image-generation direction",
+      "version": "1.1.0",
       "source": "./",
       "author": {
-        "name": "leonxlnx",
-        "email": ""
-      }
+        "name": "leonxlnx"
+      },
+      "homepage": "https://tasteskill.dev",
+      "license": "MIT",
+      "keywords": [
+        "skills",
+        "frontend",
+        "design",
+        "taste",
+        "ui",
+        "anti-slop"
+      ]
     }
   ]
 }
