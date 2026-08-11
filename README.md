@@ -101,11 +101,16 @@ Skills then invoke as `taste-skill:<install name>`, e.g. `taste-skill:design-tas
 
 ### As a claude.ai skill
 
-Zip the folder of the skill you want (the folder must contain `SKILL.md`) and upload it under Settings → Capabilities → Skills:
+Build upload-ready zips (one per skill, written to `dist/`), then upload under Settings → Capabilities → Skills:
 
 ```bash
-cd skills && zip -r design-taste.zip design-taste
+./scripts/build-zips.sh              # all skills
+./scripts/build-zips.sh design-taste # just one
 ```
+
+The script fails if a folder name and its `SKILL.md` frontmatter `name:` disagree — that mismatch is the usual cause of a rejected upload.
+
+Uploading here (rather than installing the plugin) is what makes a skill available org-wide and to Claude's design surfaces.
 
 ### Updating from the previous version
 
