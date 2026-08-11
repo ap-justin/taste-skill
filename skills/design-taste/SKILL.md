@@ -1,5 +1,5 @@
 ---
-name: design-taste-frontend
+name: design-taste
 description: Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces that do not look templated. Real design systems when applicable, audit-first on redesigns, strict pre-flight check.
 ---
 
@@ -840,7 +840,7 @@ The Reference Vocabulary (Section 10) names patterns. The Block Library implemen
 
 ### 12.A File Location
 ```
-skills/design-taste-frontend/blocks/
+skills/design-taste/blocks/
   hero/
     asymmetric-split.md
     editorial-manifesto.md

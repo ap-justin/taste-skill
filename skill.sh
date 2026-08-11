@@ -3,7 +3,7 @@
 # Local skill registry. Directory names match the `name:` in each SKILL.md
 # frontmatter, which is also the name Claude Code invokes as taste-skill:<name>.
 declare -A SKILLS=(
-  [design-taste-frontend]="skills/design-taste-frontend/SKILL.md"
+  [design-taste]="skills/design-taste/SKILL.md"
   [design-taste-frontend-v1]="skills/design-taste-frontend-v1/SKILL.md"
   [gpt-taste]="skills/gpt-taste/SKILL.md"
   [image-to-code]="skills/image-to-code/SKILL.md"
@@ -18,7 +18,8 @@ declare -A SKILLS=(
   [stitch-design-taste]="skills/stitch-design-taste/SKILL.md"
 
   # legacy aliases (pre-plugin directory names)
-  [taste-skill]="skills/design-taste-frontend/SKILL.md"
+  [taste-skill]="skills/design-taste/SKILL.md"
+  [design-taste-frontend]="skills/design-taste/SKILL.md"
   [taste-skill-v1]="skills/design-taste-frontend-v1/SKILL.md"
   [image-to-code-skill]="skills/image-to-code/SKILL.md"
   [redesign-skill]="skills/redesign-existing-projects/SKILL.md"

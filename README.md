@@ -77,13 +77,13 @@ We would love your feedback. Suggestions and bug reports:
 The [`npx skills add`](https://github.com/vercel-labs/agent-skills) CLI scans the `skills/` folder in this repo, so **all skills below (code and image-generation) install the same way.**
 
 ```bash
-npx skills add https://github.com/Leonxlnx/taste-skill
+npx skills add https://github.com/ap-justin/taste-skill
 ```
 
 Install a single skill by its **install name** (the `name:` field inside the SKILL frontmatter, which in this fork also matches the folder name):
 
 ```bash
-npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend"
+npx skills add https://github.com/ap-justin/taste-skill --skill "design-taste"
 ```
 
 You can also copy any `SKILL.md` into your project or paste it into ChatGPT / Codex conversations.
@@ -97,25 +97,25 @@ This fork is packaged as a Claude Code plugin, so all 13 skills install in one s
 /plugin install taste-skill@taste-skill
 ```
 
-Skills then invoke as `taste-skill:<install name>`, e.g. `taste-skill:design-taste-frontend`.
+Skills then invoke as `taste-skill:<install name>`, e.g. `taste-skill:design-taste`.
 
 ### As a claude.ai skill
 
 Zip the folder of the skill you want (the folder must contain `SKILL.md`) and upload it under Settings → Capabilities → Skills:
 
 ```bash
-cd skills && zip -r design-taste-frontend.zip design-taste-frontend
+cd skills && zip -r design-taste.zip design-taste
 ```
 
 ### Updating from the previous version
 
-The default `taste-skill` (install name `design-taste-frontend`) is now **v2 (experimental)**, a substantial rewrite of the original v1. If you already have v1 installed, just re-run the install command and you will be upgraded:
+The default `taste-skill` (install name `design-taste`, formerly `design-taste-frontend`) is now **v2 (experimental)**, a substantial rewrite of the original v1. If you already have v1 installed, just re-run the install command and you will be upgraded:
 
 ```bash
-npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend"
+npx skills add https://github.com/ap-justin/taste-skill --skill "design-taste"
 ```
 
-The install name did not change, so no script updates are needed. The newer SKILL.md replaces the older one in place.
+This fork shortens the install name to `design-taste` (upstream calls it `design-taste-frontend`). The newer SKILL.md replaces the older one in place.
 
 If you depend on the exact behavior of v1 and want to pin to it explicitly:
 
@@ -133,7 +133,7 @@ The `Install name` column is the exact value you pass to `--skill`.
 
 | Skill (folder = install name) | Install name | Description |
 | --- | --- | --- |
-| **design-taste-frontend** | `design-taste-frontend` | 🆕 **v2 (experimental)** - substantial rewrite of the default skill. Reads the brief, infers the design language, tunes three dials (VARIANCE / MOTION / DENSITY). Brief inference, design-system map, hard em-dash ban, canonical GSAP code skeletons, redesign-audit protocol, strict pre-flight check. Actively iterating toward v2.0.0 stable. |
+| **design-taste** | `design-taste` | 🆕 **v2 (experimental)** - substantial rewrite of the default skill. Reads the brief, infers the design language, tunes three dials (VARIANCE / MOTION / DENSITY). Brief inference, design-system map, hard em-dash ban, canonical GSAP code skeletons, redesign-audit protocol, strict pre-flight check. Actively iterating toward v2.0.0 stable. |
 | **design-taste-frontend-v1** | `design-taste-frontend-v1` | The original v1 of taste-skill, preserved for projects depending on its exact behavior. Use only if the v2 default breaks something specific in your workflow. |
 | **gpt-taste** | `gpt-taste` | Stricter variant for GPT/Codex: higher layout variance, stronger GSAP direction, aggressive anti-slop. |
 | **image-to-code** | `image-to-code` | Image-first pipeline: generate site references, analyze them, then implement the frontend to match. |
