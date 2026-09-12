@@ -11,4 +11,3 @@ full-output-enforcement: Prevents AI from being lazy, skipping code blocks, or u
 minimalist-ui: Enforces clean, editorial-style interfaces (Notion/Linear style) with strict monochrome palettes.
 industrial-brutalist-ui: Raw mechanical interfaces, Swiss typography, extreme scale contrast. (Beta)
 stitch-design-taste: Google Stitch-compatible semantic design rules for premium AI UI generation.
-grill-me: Grill the user relentlessly about a plan, decision, or idea until a shared understanding is reached. Frontier-based rounds with a recommended answer per question. Not a design skill — packaged here for claude.ai upload.
